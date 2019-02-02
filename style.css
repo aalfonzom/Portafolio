@@ -1,0 +1,79 @@
+* {
+
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box ;
+    -moz-box-sizing: border-box  ;
+    box-sizing: border-box;
+
+}
+
+body{
+     background: url('trianglify.png');
+     background-size: cover;
+     background-attachment: fixed ;
+     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+.contenedor{
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+     align-items: center;
+
+}
+.tarjeta{
+    background: #fff;
+    margin: 40px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.panel{
+    overflow: hidden;
+    z-index: 1000;
+    position: relative;
+
+}
+.panel .panelfoto {
+position: relative;
+width: 100%;
+height: 300px;
+}
+.panel .panelfoto img{
+    vertical-align: top;
+    width: 100%;
+    object-position: 100%;
+    top: 0;
+    left: 100%;
+
+}
+
+.panel .flecha-slider {
+    font-size: 35px;
+    line-height: 35px;
+    color: rgba(0,0,0,.2);
+    position: absolute;
+    top: 50%;
+    z-index: 1100;
+
+}
+.panel .flecha-slider :hover {
+    color: rgba(0,0,0,0.5);
+
+}
+
+.panel .anterior {
+    left: 20px;
+
+}
+.panel .siguiente {
+    right: 20px;
+    
+}
